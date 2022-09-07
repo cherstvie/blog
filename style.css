@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    background-color: rgb(29, 33, 38);
+    color: white;
+    height: 80px;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+[class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-xs-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+}
+
+.col-xs-2 {
+    flex: 0 0 16.66666%;
+    max-width: 16.66666%;
+}
+
+.col-xs-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-xs-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+}
+
+.col-xs-8 {
+    flex: 0 0 66.66666%;
+    max-width: 66.66666%;
+}
+
+.col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.menu {
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+}
+
+.menu > li > a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid transparent;
+    width: 100%;
+    cursor: pointer;
+}
+
+.menu > li > a:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.slider {
+    background-image: url(images/background1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    color: white;
+    max-height: 660px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.slider-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slider-button {
+    display: flex;
+    gap: 10px;
+}
+
+.h2-title {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.paragraph {
+    color: rgb(204, 208, 215);
+    font-size: 16px;
+}
+
+.slider-button > button {
+    height: 44px;
+    width: 124px;
+    background: inherit;
+    color: white;
+    border: 2px solid white;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.slider-button > button:hover {
+    border-color: rgb(57, 164, 147);
+    background-color: rgb(57, 164, 147);
+}
+
+.about {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    max-height: 1400px;
+    border-bottom: 1px solid rgb(221, 225, 228);
+}
+
+.about-title {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.line {
+    background-color: rgb(225, 230, 234);
+    width: 10px;
+    height: 35px;
+}
+
+.white-bg {
+    color: rgb(41, 47, 54);
+}
+
+.about-paragraph {
+    color: rgb(141, 143, 146);
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.socials {
+    display: flex;
+    gap: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.socials > button {
+    cursor: pointer;
+}
+
+.facebook {
+    background-image: url(images/facebook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: rgb(200, 205, 208);
+    height: 60px;
+    width: 60px;
+}
+
+.twitter {
+    background-image: url(images/twitter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: rgb(200, 205, 208);
+    height: 60px;
+    width: 60px;
+}
+
+.google {
+    background-image: url(images/google.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: rgb(200, 205, 208);
+    height: 60px;
+    width: 60px;
+}
+
+.social1 {
+    background-image: url(images/social1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: rgb(200, 205, 208);
+    height: 60px;
+    width: 60px;
+}
+
+.social2 {
+    background-image: url(images/social2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: rgb(200, 205, 208);
+    height: 60px;
+    width: 60px;
+}
+
+.socials > button:hover {
+    background-color: rgb(208, 213, 217);
+}
+
+.about-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.benefit {
+    display: flex;
+    gap: 30px;
+}
+
+.number {
+    min-width: 50px;
+    height: 50px;
+    background-color: rgb(35, 183, 164);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+.benefit-title {
+    font-size: 18px;
+    font-weight: 600;
+    color:rgb(41, 47, 54);
+    margin-bottom: 10px;
+}
+
+.benefit-paragraph {
+    color: rgb(141, 143, 146);
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.team {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+
+.team-title {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.team-member {
+    width: 263px;
+    height: 374px;
+    margin-bottom: 20px;
+}
+
+.member-photo1 {
+    background-image: url(images/member1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 263px;
+}
+
+.member-photo2 {
+    background-image: url(images/member2.png);
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+}
+
+.member-photo3 {
+    background-image: url(images/member3.png);
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+}
+
+.member-photo4 {
+    background-image: url(images/member4.png);
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+}
+
+.member-id {
+    background-color: rgb(225, 230, 234);
+    width: 100%;
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.member-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(41, 47, 54);
+}
+
+.member-post {
+    font-size: 14px;
+    color: rgb(141, 143, 146);
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.twitter-mem {
+    background-image: url(images/twitter-mem.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: rgb(58, 69, 77);
+    height: 50px;
+    width: 50px;
+}
+
+.facebook-mem {
+    background-image: url(images/facebook-mem.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: rgb(58, 69, 77);
+    height: 50px;
+    width: 50px;
+}
+
+.linkedin {
+    background-image: url(images/linkedin.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: rgb(58, 69, 77);
+    height: 50px;
+    width: 50px;
+}
+
+[class*=member-photo] .photo-socials > button:hover {
+    background-color: rgb(78, 90, 98);
+    cursor: pointer;
+}
+
+.team-member:hover [class*=member-photo] .overlay {
+    display: block;
+    cursor: pointer;
+}
+
+[class*=member-photo] .photo-socials {
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+[class*=member-photo] {
+    position: relative;
+}
+
+.team-member:hover .member-id {
+    background-color: rgb(58, 69, 77);
+    cursor: pointer;
+}
+
+.team-member:hover .member-id [class*=member-] {
+    color: white;
+}
+
+
+
+/* tablet - sm */
+@media (min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .col-sm-2 {
+        flex: 0 0 16.66666%;
+        max-width: 16.66666%;
+    }
+    
+    .col-sm-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-sm-5 {
+        flex: 0 0 41.66666%;
+        max-width: 41.66666%;
+    }
+
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .col-sm-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .col-sm-8 {
+        flex: 0 0 66.66666%;
+        max-width: 66.66666%;
+    }
+}
+
+/* laptop - md */
+@media (min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .col-md-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-md-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .col-md-5 {
+        flex: 0 0 41.66666%;
+        max-width: 41.66666%;
+    }
+    
+    .col-md-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .slider {
+        height: 660px;
+    }
+
+    .slider-text {
+        height: 660px;
+    }
+
+    .about {
+        height: 610px;
+    }
+
+    .about-title {
+        margin-top: 110px;
+    }
+
+    .team-title {
+        margin-top: 110px;
+    }
+
+    .team-member {
+        margin-bottom: 50px;
+    }
+}
+
+/* desktop - lg */
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .team-member {
+        margin-bottom: 100px;
+    }
+}
+
+/* only mobile - xs */
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none;
+    }
+}
