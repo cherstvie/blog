@@ -198,6 +198,10 @@ body {
     color: rgb(41, 47, 54);
 }
 
+.black-bg {
+    color: white;
+}
+
 .about-paragraph {
     color: rgb(141, 143, 146);
     line-height: 1.5;
@@ -446,6 +450,85 @@ body {
     color: white;
 }
 
+.work {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(60, 69, 76);
+    width: 100%;
+}
+
+.gallery {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.work-photo {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 290px;
+    height: 265px;
+}
+
+.work-photo1 {
+    background-image: url(images/gallery1.png);
+}
+
+.work-photo2 {
+    background-image: url(images/gallery2.png);
+}
+
+.work-photo3 {
+    background-image: url(images/gallery3.png);
+}
+
+.work-photo4 {
+    background-image: url(images/gallery4.png);
+}
+
+.work-photo5 {
+    background-image: url(images/gallery5.png);
+}
+
+.work-photo6 {
+    background-image: url(images/gallery6.png);
+}
+
+.work-text {
+    background-color: rgb(42, 47, 53);
+    color: white;
+    position: absolute;
+    padding-left: 15px;
+    height: 60px;
+    bottom: 0;
+    width: 290px;
+    line-height: 60px;
+    display: none;
+}
+
+.gallery:hover .work-text {
+    display: block;
+}
+
+.more-button {
+    height: 44px;
+    width: 150px;
+    background: inherit;
+    color: white;
+    border: 2px solid white;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.show-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.more-button:hover {
+    border-color: rgb(57, 164, 147);
+    background-color: rgb(57, 164, 147);
+}
 
 
 /* tablet - sm */
@@ -505,6 +588,11 @@ body {
         flex: 0 0 41.66666%;
         max-width: 41.66666%;
     }
+
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
     
     .col-md-7 {
         flex: 0 0 58.33333%;
@@ -534,6 +622,15 @@ body {
     .team-member {
         margin-bottom: 50px;
     }
+
+    .work-photo {
+        width: 360px;
+        height: 265px;
+    }
+
+    .work-text {
+        width: 360px;
+    }
 }
 
 /* desktop - lg */
@@ -545,6 +642,11 @@ body {
     .col-lg-3 {
         flex: 0 0 25%;
         max-width: 25%;
+    }
+
+    .col-lg-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
     }
 
     .team-member {
