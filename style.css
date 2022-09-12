@@ -194,6 +194,12 @@ body {
     height: 35px;
 }
 
+.line-dark {
+    background-color: rgb(78, 90, 98);
+    width: 10px;
+    height: 35px;
+}
+
 .white-bg {
     color: rgb(41, 47, 54);
 }
@@ -453,7 +459,6 @@ body {
 .work {
     font-family: 'Open Sans', sans-serif;
     background-color: rgb(60, 69, 76);
-    width: 100%;
 }
 
 .gallery {
@@ -548,14 +553,29 @@ body {
     background-color: rgb(57, 164, 147);
 }
 
+.plus {
+    background-image: url(images/plus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
+
+.what-we-do {
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 30px;
+}
+
 .do-block {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .do-img {
-    background-image: url(images/settings.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 48px;
@@ -563,12 +583,130 @@ body {
     margin-bottom: 15px;
 }
 
-.plus {
-    background-image: url(images/plus.png);
-    background-position: center;
+.settings-img {
+    background-image: url(images/settings.png);
+}
+
+.edit-img {
+    background-image: url(images/edit.png);
+}
+
+.phone-img {
+    background-image: url(images/phone.png);
+}
+
+.clock-img {
+    background-image: url(images/clock.png);
+}
+
+.do-title {
+    font-size: 18px;
+    font-weight: 600;
+    color:rgb(41, 47, 54);
+    margin-bottom: 10px;
+}
+
+.do-paragraph {
+    color: rgb(141, 143, 146);
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+}
+
+.features {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(60, 69, 76);
+    padding-bottom: 30px;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feature-img {
     background-repeat: no-repeat;
-    width: 48px;
-    height: 48px;
+    background-position: center;
+    width: 290px;
+    height: 240px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.feature1 {
+    background-image: url(images/feature1.png);
+}
+
+.feature2 {
+    background-image: url(images/feature2.png);
+}
+
+.feature3 {
+    background-image: url(images/feature3.png);
+}
+
+.feature-title {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+.feature-paragraph {
+    font-size: 16px;
+    color: rgb(220, 223, 225);
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+
+
+
+footer {
+    height: 140px;
+    background-color: rgb(58, 69, 77);
+}
+
+.copyright {
+    font-size: 14px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+.social-ft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95px;
+}
+
+.footer-socials {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 41px;
+    height: 41px;
+    cursor: pointer;
+}
+
+.twitter-ft {
+    background-image: url(images/twitter-mem.png);
+}
+
+.facebook-ft {
+    background-image: url(images/facebook-mem.png);
+}
+
+.skype {
+    background-image: url(images/skype.png);
+}
+
+.be-social {
+    background-image: url(images/be-social.png);
+}
+
+.linkedin-ft {
+    background-image: url(images/linkedin.png);
 }
 
 /* tablet - sm */
@@ -605,6 +743,28 @@ body {
     .col-sm-8 {
         flex: 0 0 66.66666%;
         max-width: 66.66666%;
+    }
+
+    .col-sm-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .col-sm-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    .feature-img {
+        width: 360px;
+    }
+
+    footer {
+        height: 95px;
+    }
+
+    .copyright {
+        line-height: 95px;
     }
 }
 
@@ -675,12 +835,20 @@ body {
     .gallery {
         width: 360px;
     }
+
+    .what-we-do {
+        padding-bottom: 50px;
+    }
+
+    .features {
+        padding-bottom: 100px;
+    }
 }
 
 /* desktop - lg */
 @media (min-width:1200px) {
     .container {
-        max-width: 1140px;
+        max-width: 1170px;
     }
 
     .col-lg-3 {
@@ -695,6 +863,10 @@ body {
 
     .team-member {
         margin-bottom: 100px;
+    }
+
+    .what-we-do {
+        padding-bottom: 100px;
     }
 }
 
