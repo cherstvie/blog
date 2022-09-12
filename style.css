@@ -459,6 +459,8 @@ body {
 .gallery {
     position: relative;
     margin-bottom: 30px;
+    width: 290px;
+    height: 265px;
 }
 
 .work-photo {
@@ -495,17 +497,33 @@ body {
 .work-text {
     background-color: rgb(42, 47, 53);
     color: white;
-    position: absolute;
     padding-left: 15px;
     height: 60px;
-    bottom: 0;
     width: 290px;
     line-height: 60px;
+    display: none;
+    position: absolute;
+    bottom: 0;
+}
+
+.overlay-dark {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: none;
 }
 
 .gallery:hover .work-text {
     display: block;
+}
+
+.gallery:hover .overlay-dark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .more-button {
@@ -530,6 +548,28 @@ body {
     background-color: rgb(57, 164, 147);
 }
 
+.do-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.do-img {
+    background-image: url(images/settings.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 15px;
+}
+
+.plus {
+    background-image: url(images/plus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+}
 
 /* tablet - sm */
 @media (min-width:768px) {
@@ -629,6 +669,10 @@ body {
     }
 
     .work-text {
+        width: 360px;
+    }
+
+    .gallery {
         width: 360px;
     }
 }
