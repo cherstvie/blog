@@ -659,7 +659,24 @@ body {
     margin-bottom: 30px;
 }
 
+.contact {
+    font-family: 'Open Sans', sans-serif;
+}
 
+.contact-title {
+    font-size: 20px;
+    font-weight: 600;
+    color:rgb(41, 47, 54);
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.contact-paragraph {
+    color: rgb(141, 143, 146);
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
 
 
 footer {
@@ -861,12 +878,29 @@ footer {
         max-width: 33.33333%;
     }
 
+    .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
     .team-member {
         margin-bottom: 100px;
     }
 
     .what-we-do {
         padding-bottom: 100px;
+    }
+
+    .contact-title {
+        margin-top: 60px;
+    }
+
+    .contact-paragraph {
+        margin-top: 20px;
+    }
+
+    .contact-par {
+        margin-bottom: 100px;
     }
 }
 
