@@ -12,6 +12,7 @@ body {
   background-color: rgb(29, 33, 38);
   color: white;
   height: 80px;
+  line-height: 80px;
 }
 
 .container {
@@ -913,6 +914,7 @@ footer {
     width: 15px;
     height: 15px;
     position: relative;
+    top: 30px;
   }
 
   .nav-mobile-menu span {
@@ -937,9 +939,9 @@ footer {
   }
 
   .navigation {
-    position: fixed;
-    width: 280px;
-    max-width: 280px;
+    position: absolute;
+    width: 160px;
+    max-width: 160px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -966,7 +968,17 @@ footer {
   .navigation.active-menu {
     opacity: 1;
     visibility: visible;
-    top: 8px;
+    top: 80px;
     transform: translateX(0);
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: visible;
+    background-color: rgb(29, 33, 38);
+    height: fit-content;
   }
 }
